@@ -17,9 +17,9 @@ mongoose.connect(mongoURI)
 .catch( (err) => console.error("Error: ", err))
 
 app.get('/', (req, res) => {
-    res.send("Hello1");
+    res.send("Hello! Welcome to travel plan api");
 })
 
-app.use('/plan', router);
+app.use('/plans', router);
 
 app.listen(PORT, () => console.log(`You are listering at port ${PORT}`));
